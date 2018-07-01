@@ -1,47 +1,57 @@
-var vertices = 100;
-var height;
-var width;
-var baseRadius = 200;
-var offset = 0;
-var noiseScale = 150;
-var speed = 0.005;
+var cols, rows;
+var scl = 20;
+var w = 1400;
+var h = 1000;
+
+var flying = 0;
+
+var terrain = [];
+
 
 function setup() {
   height = document.getElementById('hero').clientHeight;
 	width = document.getElementById('hero').clientWidth;
   frameRate(60);
-	var canvas = createCanvas(width, height);
+	var canvas = createCanvas(width, height, WEBGL);
 	canvas.parent("hero");
 	background(0);
+  cols = w / scl;
+  rows = h/ scl;
+
+  for (var x = 0; x < cols; x++) {
+    terrain[x] = [];
+    for (var y = 0; y < rows; y++) {
+      terrain[x][y] = 0; //specify a default value for now
+    }
+  }
 }
 
 function draw() {
-  background(102);
-  push();
-  translate(width*0.5, height*0.5);
-  rotate (PI / 6)
-  blob (0, 0, baseRadius, vertices, 6);
-  pop();
-}
 
-function blob (x, y, baseRadius, npoints, sections) {
-  var angle = TWO_PI / npoints;
-  beginShape();
-
-  for (var i = 0; i < sections; i+=2)
-  {
-    for (var a = 0; a < TWO_PI / sections; a += angle) {
-      var radius = baseRadius + noise (frameCount * speed /*+ i * (TWO_PI / sections) */+ a) * noiseScale;
-      var sx = x + cos(i * (TWO_PI / sections) + a) * radius;
-      var sy = y + sin(i * (TWO_PI / sections) + a) * radius;
-      curveVertex(sx, sy);
+  flying -= 0.01;
+  rotate (PI);
+  var yoff = flying;
+  for (var y = 0; y < rows; y++) {
+    var xoff = 0;
+    for (var x = 0; x < cols; x++) {
+      terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
+      xoff += 0.2;
     }
-    for (var a = 0; a < TWO_PI / sections; a += angle) {
-      var radius = baseRadius + noise (frameCount * speed /*+ i * (TWO_PI / sections) */+ TWO_PI / sections - a) * noiseScale;
-      var sx = x + cos((i + 1) * (TWO_PI / sections) + a) * radius;
-      var sy = y + sin((i + 1) * (TWO_PI / sections) + a) * radius;
-      curveVertex(sx, sy);
-    }
+    yoff += 0.2;
   }
-  endShape(CLOSE);
+
+
+  background(0);
+  translate(0, 50);
+  rotateX(-PI/3);
+  fill(200,200,200, 50);
+  translate(-w/2, -h/2);
+  for (var y = 0; y < rows-1; y++) {
+    beginShape(TRIANGLE_STRIP);
+    for (var x = 0; x < cols; x++) {
+      vertex(x*scl, y*scl, terrain[x][y]);
+      vertex(x*scl, (y+1)*scl, terrain[x][y+1]);
+    }
+    endShape();
+  }
 }
