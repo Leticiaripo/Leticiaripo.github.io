@@ -1,7 +1,9 @@
 var cols, rows;
 var scl = 20;
-var w = 1400;
-var h = 1000;
+var w = 2800;
+var h = 1100;
+var width;
+var height;
 
 var flying = 0;
 
@@ -14,7 +16,7 @@ function setup() {
   frameRate(60);
 	var canvas = createCanvas(width, height, WEBGL);
 	canvas.parent("hero");
-	background(0);
+	background("#eee");
   cols = w / scl;
   rows = h/ scl;
 
@@ -28,8 +30,7 @@ function setup() {
 
 function draw() {
 
-  flying -= 0.01;
-  rotate (PI);
+  flying -= 0.005;
   var yoff = flying;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
@@ -40,10 +41,10 @@ function draw() {
     yoff += 0.2;
   }
 
-
-  background(0);
-  translate(0, 50);
-  rotateX(-PI/3);
+  rotate (PI);
+  background("#eee");
+  //translate(0, 50);
+  rotateX(PI);
   fill(200,200,200, 50);
   translate(-w/2, -h/2);
   for (var y = 0; y < rows-1; y++) {
