@@ -1,6 +1,16 @@
 /* * Author: Carlos Alvarez * URL: http://alvarez.is * * Project Name: Small - Free Bootstrap 3 Theme * Version: 1.0 * URL: http://blacktie.co */
 /* FONTS */
  @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
+
+@font-face {
+    font-family: 'aileronsregular';
+    src: url('./../fonts/ailerons-typeface-webfont.woff2') format('woff2'),
+         url('./../fonts/ailerons-typeface-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
  body {
      font-family: 'Open Sans', sans-serif;
      background: #eee;
@@ -85,6 +95,24 @@
      top: 50%;
      margin-top: -195px;
 }
+
+#hero-value
+{
+  height: 300px;
+  width: 900px;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-value h1
+{
+  font-family: 'aileronsregular', sans-serif;
+  line-height: 80px;
+}
+
  .hero-image {
      width: auto;
      height: auto;
