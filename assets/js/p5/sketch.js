@@ -1,7 +1,7 @@
 var cols, rows;
 var scl = 20;
-var w = 2800;
-var h = 1100;
+var w = 1500;
+var h = 1500;
 var width;
 var height;
 
@@ -41,9 +41,9 @@ function draw() {
     yoff += 0.2;
   }
 
-  rotate (PI);
+  //rotate (PI);
   background("#eee");
-  //translate(0, 50);
+  translate (0, -80, -1000);
   rotateX(PI);
   fill(200,200,200, 50);
   translate(-w/2, -h/2);
