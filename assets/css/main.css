@@ -52,13 +52,18 @@
      border: none;
 }
 
- a:link, a:visited, a:active {
+a:link, a:visited, a:active {
      font-weight: 600;
      color: #f5f6f7;
      text-decoration: none;
 }
- a:link:hover, a:visited:hover, a:active:hover {
-     color: #e1e1e1;
+
+#work a:link, a:visited, a:active{
+   color: #f5f6f7 !important;
+}
+
+.nav a:link:hover, a:visited:hover, a:active:hover {
+     color: #ffb511;
      -webkit-transition: color 1s;
      -moz-transition: color 1s;
      -ms-transition: color 1s;
@@ -89,10 +94,11 @@
 }
 
 .nav a {
-     font-family: 'aileronsregular', sans-serif;
+     font-family: 'aileronregular', sans-serif;
      margin: 0px 50px;
      padding: 0px;
-     color: black
+     color: black;
+     font-size: 16px;
 }
 
  .mb-7 {
@@ -318,10 +324,14 @@
      margin-right: -10px;
 }
  #networks i {
-     font-size: 70px;
+     font-size: 35px;
      position: relative;
-     top: 10px;
+     top: 0px;
      color: #AAA;
+}
+
+#networks img {
+  height: 35px;
 }
 
 #networks a {
@@ -329,6 +339,9 @@
 }
 
 #call-to-action {
-  background-color: black;
-  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  margin-bottom: 50px;
 }
