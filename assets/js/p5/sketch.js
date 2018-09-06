@@ -45,7 +45,7 @@ function draw() {
   background("#eee");
   translate (0, -80, -1000);
   rotateX(PI);
-  fill(200,200,200, 50);
+  fill("#ffb511");
   translate(-w/2, -h/2);
   for (var y = 0; y < rows-1; y++) {
     beginShape(TRIANGLE_STRIP);

@@ -11,6 +11,15 @@
 
 }
 
+@font-face {
+    font-family: 'aileronregular';
+    src: url('./../fonts/aileron-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
  body {
      font-family: 'Open Sans', sans-serif;
      background: #eee;
@@ -119,7 +128,7 @@
 {
   font-family: 'aileronsregular', sans-serif;
   line-height: 80px;
-  color: black;
+  color: white;
 }
 
  .hero-image {
@@ -252,26 +261,74 @@
  ul.slides li a p {
      display: none;
 }
+
+#about{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-family: 'aileronregular', sans-serif;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#about .container {
+  height: 100%;
+}
+
+#about-hero {
+  padding-top: 80px;
+}
+
+#about-background {
+  margin-top: 50px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+#value-prop {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#process-link {
+  text-align: right;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #AAA;
+}
+
 /* ========================= FOOTER =========================*/
  #networks {
      width: 100%;
      height: 100%;
      padding-top: 200px;
+     font-family: 'aileronsregular', sans-serif;
+     font-size: 30px;
+     margin-left: -10px;
+     margin-right: -10px;
 }
  #networks i {
-     font-size: 60px;
-     color: white;
-     padding: 18px;
+     font-size: 70px;
+     position: relative;
+     top: 10px;
+     color: #AAA;
 }
- #networks .dribbble:hover {
-     color: #ed6297;
+
+#networks a {
+  margin: 60px;
 }
- #networks .facebook:hover {
-     color: #3b5998;
-}
- #networks .twitter:hover {
-     color: #2094CA;
-}
- #networks .mail:hover {
-     color: #f39c12;
+
+#call-to-action {
+  background-color: black;
+  color: white;
 }
