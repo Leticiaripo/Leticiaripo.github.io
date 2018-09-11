@@ -305,7 +305,6 @@ a:link, a:visited, a:active {
 }
 
 #process-link {
-  text-align: right;
   font-style: italic;
   text-decoration: underline;
   font-size: 18px;
