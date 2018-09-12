@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="./../../assets/css/projects.css">
+</head>
+<body>
+  <nav class="nav-container">
+    <div class="nav" id="nav-logo">
+      <a href="./../../index.html#hero" class="scroll"><img src="./../../assets/img/logo.png" width=143px height=100px></a>
+    </div>
+    <div class="nav navbar" id="nav-main">
+      <a href="./../../index.html#hero" class="scroll"><img src="./../../assets/img/back_arrow.png" width=30px></a>
+    </div>
+  </nav>
+  <div class="container" id="root">
+    <h1> THE FUTURE </h1>
+    <div class="row">
+      <div class="col-md-6">
+        The Future consists of a 15-30 second title sequence for
+        a hypothetical documentary series on The Future: six
+        drivers of global change by Al Gore, Edbury Publishing,
+        2013. The title sequence will be accompanied by an
+        interactive digital experience that includes the content of
+        the documentary series.
+      </div>
+      <div class="w-100 d-none d-md-block"></div>
+    </div>
+    <div class="row">
+      <div class = "col-md-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NETuIzbUxe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="img/1.jpg" data-toggle="lightbox">
+          <img src="img/1.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="img/2.jpg" data-toggle="lightbox">
+          <img src="img/2.jpg" class="img-fluid">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="img/3.jpg" data-toggle="lightbox">
+          <img src="img/3.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Inspired by the story telling structures used by some of
+          the title sequence designers at Peter Anderson Studio in
+          London (visited as part of the research for this project), an
+          attempt was made at depicting the complexity, urgency
+          and technological data-driven content of the book.
+        </p>
+        <p>
+          The six drivers of global change are represented
+          metaphorically through a celebration of imagery
+          including: Fractals, Dimensions, Solar Pannels, 3D printing,
+          Thermodynamics, an Electromagnetic spectrum and Ice
+          caps as seen from space.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="img/4.jpg" data-toggle="lightbox">
+            <img src="img/4.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="img/5.jpg" data-toggle="lightbox">
+            <img src="img/5.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="img/6.jpg" data-toggle="lightbox">
+            <img src="img/6.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="img/7.jpg" data-toggle="lightbox">
+            <img src="img/7.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="img/8.jpg" data-toggle="lightbox">
+            <img src="img/8.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="img/9.jpg" data-toggle="lightbox">
+            <img src="img/9.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                  event.preventDefault();
+                  $(this).ekkoLightbox({ alwaysShowClose: true });
+              });
+  </script>
+</body>
+</html>

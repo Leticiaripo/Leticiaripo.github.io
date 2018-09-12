@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="./../../assets/css/projects.css">
+</head>
+<body>
+  <nav class="nav-container">
+    <div class="nav" id="nav-logo">
+      <a href="./../../index.html#hero" class="scroll"><img src="./../../assets/img/logo.png" width=143px height=100px></a>
+    </div>
+    <div class="nav navbar" id="nav-main">
+      <a href="./../../index.html#hero" class="scroll"><img src="./../../assets/img/back_arrow.png" width=30px></a>
+    </div>
+  </nav>
+  <div class="container" id="root">
+    <h1> Ten Typographic Values<br>of a Modern Family </h1>
+    <div class="row">
+      <div class="col-md-6">
+        10 T.V.M.F is an Augmented Reality experience with the
+        intention to better understand and implement storytelling
+        practices into a digital artefact that tells my story through a
+        self-initiated journey.
+      </div>
+      <div class="w-100 d-none d-md-block"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="img/T.V.O.M.F 6.jpg" data-toggle="lightbox">
+          <img src="img/T.V.O.M.F 6.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jCCn5TBeU7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <a href="img/T.V.O.M.F 1.jpg" data-toggle="lightbox">
+          <img src="img/T.V.O.M.F 1.jpg" class="img-fluid spaced-image">
+        </a>
+        <p>
+          In a digital attempt to bring my family members closer to Vancouver,
+          10 T.V.M.F is a visualization of the words and childhood
+          values taught to me by the closest of my
+          relatives marrying typography and augmented reality.
+        </p>
+        <p>
+          10 T.V.M.F is an Augmented Reality experience made during
+          my time at the CDM with the intention to better understand
+          and implement storytelling practices into a digital artefact that
+          tells my story through semiotics, semantics, and pragmatics
+          that speak to me personally.
+        </p>
+        <p>
+          The positioning of the text around the viewer is intended to
+          present a petal storytelling structure as it has been used in traditional
+          forms of media in the past and applied in a contemporary
+          version of digital media. This allows the viewer to
+          explore the different blocks of text more freely, being able to
+          change their sight from one to another without correlation
+          or an intended order perhaps identifying certain patterns or
+          words within the blocks that change their perception of the
+          piece (a reached conclusion).
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a href="img/T.V.O.M.F 4.jpg" data-toggle="lightbox">
+          <img src="img/T.V.O.M.F 4.jpg" class="img-fluid spaced-image">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                  event.preventDefault();
+                  $(this).ekkoLightbox({ alwaysShowClose: true });
+              });
+  </script>
+</body>
+</html>
