@@ -88,5 +88,9 @@ h1 {
 }
 
 .spaced-image {
-  margin-top: 20px;
+  margin-top: 24px;
+}
+
+.clear-top {
+  margin-top: 5px;
 }
