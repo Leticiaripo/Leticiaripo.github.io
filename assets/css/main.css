@@ -1,4 +1,4 @@
-/* * Author: Carlos Alvarez * URL: http://alvarez.is * * Project Name: Small - Free Bootstrap 3 Theme * Version: 1.0 * URL: http://blacktie.co */
+
 /* FONTS */
  @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
 
@@ -21,6 +21,7 @@
 }
 
  body {
+    position: relative;
      font-family: 'Open Sans', sans-serif;
      background: #eee;
      color: #000;
@@ -45,24 +46,26 @@
      padding: 0;
 }
 /* ========================= GENERAL STYLES =========================*/
- *, *:before, *:after {
-     -moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     border: none;
-}
+
 
 a:link, a:visited, a:active {
      font-weight: 600;
-     color: #f5f6f7;
      text-decoration: none;
 }
 
 #work a:link, a:visited, a:active{
-   color: #f5f6f7 !important;
+   color: #f5f6f7;
 }
 
-.nav a:link:hover, a:visited:hover, a:active:hover {
+.nav a {
+     font-family: 'aileronregular', sans-serif;
+     margin: 0px 50px;
+     padding: 0px;
+     color: black;
+     font-size: 16px;
+}
+
+.nav a:link:hover, .nav a:visited:hover, .nav a:active:hover {
      color: #ffb511;
      -webkit-transition: color 1s;
      -moz-transition: color 1s;
@@ -91,14 +94,6 @@ a:link, a:visited, a:active {
   max-height: 100px;
   width: auto;
   height: auto;
-}
-
-.nav a {
-     font-family: 'aileronregular', sans-serif;
-     margin: 0px 50px;
-     padding: 0px;
-     color: black;
-     font-size: 16px;
 }
 
  .mb-7 {

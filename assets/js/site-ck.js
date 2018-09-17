@@ -16,8 +16,8 @@ jQuery(document).ready(function() {
     });
     $("#work").height($(window).height());
     $(window).resize(function() {
-        $("#work").minHeight($(window).height());
-        $(".showcase-info").css("min-height", "360px")
+        $("#work").height($(window).height());
+        $(".showcase-info").css("min-height", "600px")
     });
     $("#networks").height($(window).height());
     $(window).resize(function() {
