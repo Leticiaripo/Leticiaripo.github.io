@@ -63,7 +63,7 @@ function draw() {
     }
     endShape();
   }
-  fill ("#000");
-  ellipseMode(CENTER);
-  ellipse (mappedX * scl, mappedY * scl, scl * radius, scl * radius);
+  //fill ("#000");
+  //ellipseMode(CENTER);
+  //ellipse (mappedX * scl, mappedY * scl, scl * radius, scl * radius);
 }
