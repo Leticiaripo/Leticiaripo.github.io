@@ -35,7 +35,7 @@ function draw() {
   var yoff = flying;
 
   var mappedX = map (mouseX, width / 3, 2 * width / 3, 0, cols + 1) * 0.8;
-  var mappedY = map (mouseY, 0, height, 0, rows);
+  var mappedY = map (Math.min(mouseY, height), 0, height, 0, rows);
 
   var distance;
   var applied;
